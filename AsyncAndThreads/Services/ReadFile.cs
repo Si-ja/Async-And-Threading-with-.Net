@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
-using System;
 
 namespace AsyncAndThreads.Services
 {
