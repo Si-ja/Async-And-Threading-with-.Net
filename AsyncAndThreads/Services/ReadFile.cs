@@ -24,9 +24,7 @@ namespace AsyncAndThreads.Services
         {
             try
             {
-                {
-                    return ReadTxtFileSleep(filePath);
-                }
+                return ReadTxtFileSleep(filePath);
             }
             catch (IOException ex)
             {
@@ -38,9 +36,7 @@ namespace AsyncAndThreads.Services
         {
             try
             {
-                {
-                    return Task.Run(() => ReadTxtFileSleepAsync(filePath)); 
-                }
+                return Task.Run(() => ReadTxtFileSleepAsync(filePath)); 
             }
             catch (IOException ex)
             {
