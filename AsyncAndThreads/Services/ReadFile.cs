@@ -51,8 +51,7 @@ namespace AsyncAndThreads.Services
 
                 return new Thread(() =>
                 {
-                    Thread.Sleep(5000);
-                    string[] data = ReadTxtFile(filePath);
+                    string[] data = ReadTxtFileSleep(filePath);
                     ReadData.ReadStringArray(data);
                 });
             }
